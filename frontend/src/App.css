@@ -4,15 +4,15 @@
 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+/* For header  */
+.logo img {
+  max-width: 100px;
 }
 
 .App-header {
@@ -20,13 +20,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-footer{
-  min-height: 5vh;
   color: white;
 }
 
@@ -44,6 +39,131 @@
 }
 
 .About-App{
+  /* min-height: 40vh; */
   margin: 5rem;
   color: white;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+}
+.home{
+  margin-right: 2rem;
+}
+.home a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.home a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* For Footer  */
+.App-footer{
+  min-height: 10vh;
+  color: white;
+}
+
+
+/* For starting body Container  */
+.options-container {
+  /* min-height: 40vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.option {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+}
+
+.option h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.option p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.option button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option button:hover {
+  background-color: #0056b3;
+}
+
+.student {
+  background-color: #7bed9f;
+}
+
+.teacher {
+  background-color: #ff7979;
+}
+
+
+/* For Branches page  */
+
+.branches-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  min-height: 60vh;
+}
+
+.branch {
+  width: calc(20% - 40px); /* Adjust as needed */
+  padding: 20px;
+  margin: 20px;
+  background-color: #a9d86b;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.branch:hover {
+  transform: translateY(-5px);
+}
+
+.branch h3 {
+  color: #333;
+  font-size: 20px;
+}
+
+.branch p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
 }
