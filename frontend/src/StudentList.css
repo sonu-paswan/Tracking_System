@@ -1,0 +1,50 @@
+.student-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-left:21rem;
+    margin-bottom: 20px;
+  }
+  
+  .search-label {
+    margin-right: 10px;
+  }
+  
+  .search-select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:1rem ;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .student-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .student-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
