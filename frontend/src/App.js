@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Branches from "./components/Branches";
-import StudentList from "./StudentList";
+import StudentList from "./components/StudentList";
 function App() {
   return (
     <div className="App">
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/branches" element={<Branches />} />
-          <Route path="/:branch" element={<StudentList/>}/> 
+          <Route path="/student/:branch" element={<StudentList/>}/> 
         </Routes>
         <Footer />
       </BrowserRouter>

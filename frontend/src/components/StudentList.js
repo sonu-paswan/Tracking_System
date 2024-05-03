@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import "../src/StudentList.css"; // Import your CSS file for styling
+import "../StudentList.css"; 
 
 function StudentList() {
   const { branch } = useParams();
-  console.log(branch);
+ 
   const [Branch,setBranch]=useState("");
   
   const [selectedYear, setSelectedYear] = useState("");
@@ -20,10 +20,9 @@ function StudentList() {
   }, [selectedYear, Branch]);
 
   const fetchStudentData = async (year, branch) => {
-    console.log(branch,year);
     try {
       const response = await fetch(
-        `https://localhost:4000/${branch}/${year}`
+        `http://localhost:4000/${branch}/${year}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
@@ -71,13 +70,13 @@ function StudentList() {
           <li key={student.id} className="student-item">
             <strong>ID:</strong> {student.id}
             <br />
-            <strong>Role Number:</strong> {student.role_number}
+            <strong>Role Number:</strong> {student.data.Roll_no}
             <br />
-            <strong>Name:</strong> {student.name}
+            <strong>Name:</strong> {student.data.Name}
             <br />
-            <strong>Branch:</strong> {student.branch}
+            <strong>Branch:</strong> {student.data.Branch}
             <br />
-            <strong>Year:</strong> {student.year}
+            <strong>Year:</strong> {student.data.Year}
           </li>
         ))}
       </ul>

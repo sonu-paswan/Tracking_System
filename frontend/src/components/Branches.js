@@ -13,7 +13,7 @@ function Branches() {
     <div className="branches-container">
       {branches.map((branch, index) => (
         <div key={index} className="branch">
-        <Link to={"/"+branch.name}style={{ textDecoration: "none", color: "inherit" }}>
+        <Link to={"/student/"+branch.name}style={{ textDecoration: "none", color: "inherit" }}>
           <h3>{branch.name}</h3>
           <p>{branch.description}</p>
           </Link>
