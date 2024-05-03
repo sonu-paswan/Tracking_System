@@ -5,6 +5,7 @@ const router = express.Router();
 
 
 router.get('/register', async (req, res) => {
+  console.log(req.query);
     try {
       const querySnapshot = await getDocs(collection(db, "users"));
       const users = [];
@@ -27,7 +28,7 @@ router.get('/register', async (req, res) => {
 
 
 router.post('/register', async (req, res) => {
-    console.log(req.body);
+    
     try {
         const docRef = await addDoc(collection(db, "users"), req.body);
         console.log("Document written with ID: ", docRef.id);
