@@ -40,7 +40,7 @@ router.post('/register', async (req, res) => {
 });
 
 
-router.get('/:Branch', async (req, res) => {
+router.get('/student/:Branch', async (req, res) => {
   const branch = req.params.Branch; 
   console.log('Branch:', branch);
   
@@ -68,7 +68,7 @@ router.get('/:Branch', async (req, res) => {
 });
 
 
-router.get('/:Branch/:Year', async (req, res) => {
+router.get('student/:Branch/:Year', async (req, res) => {
   const branch = req.params.Branch;
   const year = parseInt(req.params.Year); // Convert year to integer if necessary
   console.log('Branch:', branch);
@@ -99,7 +99,7 @@ router.get('/:Branch/:Year', async (req, res) => {
 });
 
 
-router.get('/:Year', async (req, res) => {
+router.get('student/:Year', async (req, res) => {
   const year = req.params.Year; 
   console.log('Year:', year);
   
