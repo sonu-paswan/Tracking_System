@@ -1,8 +1,7 @@
 const express = require('express');
 const {collection, addDoc, getDocs } = require('firebase/firestore');
 const cors = require('cors')
-const studentDetail=require('./route/studentDetail.js');
-const attendance = require('./route/attendance.js')
+const attendance=require('./route/attendance.js');
 const track=require('./route/tracked.js');
 const db = require('./config.js')
 const app = express();
@@ -19,8 +18,8 @@ app.use(cors({
   credentials: true,
 }))
 
-app.use('/',studentDetail);
-app.use('/create',attendance);
+
+app.use('/',attendance);
 app.use('/track', track);
 
 // Start the server
