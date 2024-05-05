@@ -5,7 +5,6 @@ const router = express.Router();
 
 
 router.get('/', async (req, res) => {
-  console.log(req.query);
     try {
       const querySnapshot = await getDocs(collection(db, "tracked"));
       const users = [];
@@ -26,6 +25,28 @@ router.get('/', async (req, res) => {
     }
   });
 
+  router.get("/:roll_no",async(req,res)=>{
+    const roll_no = req.params.roll_no;
+  
+    try {
+      // Create a query to fetch documents from "users" collection where branch and year match the requested values
+      const q = query(collection(db, 'tracked'), where('Roll_no', '==', roll_no));
+      const querySnapshot = await getDocs(q);
+  
+      const students = [];
+      querySnapshot.forEach((doc) => {
+        students.push({
+          id: doc.id,
+          data: doc.data()
+        });
+      });
+      // Send the students array as a response
+      res.status(200).json(students);
+    } catch (error) {
+      console.error('Error getting documents: ', error);
+      res.status(500).send('Error getting students.');
+    }
+  })
 
   router.post('/', async (req, res) => {
     

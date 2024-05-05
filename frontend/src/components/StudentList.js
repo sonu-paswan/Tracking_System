@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import "../StudentList.css"; 
 
 function StudentList() {
@@ -22,7 +22,7 @@ function StudentList() {
   const fetchStudentData = async (year, branch) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/${branch}/${year}`
+        `http://localhost:4000/student/${branch}/${year}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
@@ -67,17 +67,19 @@ function StudentList() {
       </form>
       <ul className="student-list">
         {studentData.map((student) => (
+          <Link to={"/track/"+student.data.Roll_no} style={{ textDecoration: "none", color: "inherit" }}>
           <li key={student.id} className="student-item">
             <strong>ID:</strong> {student.id}
             <br />
             <strong>Role Number:</strong> {student.data.Roll_no}
             <br />
             <strong>Name:</strong> {student.data.Name}
-            <br />
-            <strong>Branch:</strong> {student.data.Branch}
+            <br />  
+            <strong>Branch:</strong> {student.data.Branch}  
             <br />
             <strong>Year:</strong> {student.data.Year}
           </li>
+          </Link>
         ))}
       </ul>
     </div>
