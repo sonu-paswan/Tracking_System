@@ -5,7 +5,6 @@ const router = express.Router();
 
 
 router.get('/register', async (req, res) => {
-  console.log(req.query);
     try {
       const querySnapshot = await getDocs(collection(db, "users"));
       const users = [];
@@ -57,7 +56,7 @@ router.get('/student/:Branch', async (req, res) => {
           });
       });
 
-      console.log('Students:', students);
+      // console.log('Students:', students);
       
       // Send the students array as a response
       res.status(200).json(students);
@@ -71,15 +70,12 @@ router.get('/student/:Branch', async (req, res) => {
 router.get('student/:Branch/:Year', async (req, res) => {
   const branch = req.params.Branch;
   const year = parseInt(req.params.Year); // Convert year to integer if necessary
-  console.log('Branch:', branch);
-  console.log('Year:', year);
 
   try {
     // Create a query to fetch documents from "users" collection where branch and year match the requested values
     const q = query(collection(db, 'users'), where('Branch', '==', branch), where('Year', '==', year));
     const querySnapshot = await getDocs(q);
 
-    console.log('Query result length:', querySnapshot.docs.length);
     const students = [];
     querySnapshot.forEach((doc) => {
       students.push({
@@ -87,9 +83,6 @@ router.get('student/:Branch/:Year', async (req, res) => {
         data: doc.data()
       });
     });
-
-    console.log('Students:', students);
-
     // Send the students array as a response
     res.status(200).json(students);
   } catch (error) {
@@ -117,7 +110,7 @@ router.get('student/:Year', async (req, res) => {
           });
       });
 
-      console.log('Students:', students);
+      // console.log('Students:', students);
       res.status(200).json(students);
   } catch (error) {
       console.error('Error getting documents: ', error);

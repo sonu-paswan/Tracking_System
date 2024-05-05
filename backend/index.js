@@ -6,7 +6,7 @@ const track=require('./route/tracked.js');
 const db = require('./config.js')
 const app = express();
 const axios = require('axios');
-const port = 3000;
+const port = 4000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
