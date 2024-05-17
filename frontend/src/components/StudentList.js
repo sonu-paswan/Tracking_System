@@ -66,10 +66,11 @@ function StudentList() {
         </button>
       </form>
       <ul className="student-list">
+        <h1 style={{color:'white'}}>Registered students of {Branch}</h1>
         {studentData.map((student) => (
-          <Link to={"/track/"+student.data.Roll_no} style={{ textDecoration: "none", color: "inherit" }}>
+          <Link to={"/track/"+student.data.UID} style={{ textDecoration: "none", color: "inherit" }}>
           <li key={student.id} className="student-item">
-            <strong>ID:</strong> {student.id}
+            <strong>ID:</strong> {student.data.UID}
             <br />
             <strong>Role Number:</strong> {student.data.Roll_no}
             <br />

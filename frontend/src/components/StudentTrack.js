@@ -27,25 +27,25 @@ function StudentTrack() {
   };
   return (
     <div className="student-list-container">
-      <h1 style={headerStyle}>Student Track Detail</h1>
+      <h1 style={headerStyle}>Track Detail for {Roll_no}</h1>
       <ul className="student-list">
         {TrackDetail.map((student) => (
           <li key={student.id} className="student-item">
-            {/* <strong>ID:</strong> {student.id}
-            <br /> */}
-            <strong>Role Number:</strong> {student.data.Roll_no}
+            <strong>ID:</strong> {student.data.rfid_id}
             <br />
-            <strong>Name:</strong> {student.data.Name}
+            {/* <strong>Role Number:</strong> {student.data.Roll_no} */}
+            {/* <br /> */}
+            <strong>Name:</strong> {student.data.name}
             <br />
             {/* <strong>Branch:</strong> {student.data.Branch}
             <br /> */}
             {/* <strong>Year:</strong> {student.data.Year}
             <br /> */}
-            <strong>Node Number:</strong> {student.data.NodeID}
+            <strong>Node Number:</strong> {student.data.node_id}
             <br />
-            <strong>Date:</strong> {student.data.Date}
-            <br />
-            <strong>Time:</strong> {student.data.Time}
+            {/* <strong>Date:</strong> {student.data.Date}
+            <br /> */}
+            <strong>Time:</strong> {student.data.time}
           </li>
         ))}
       </ul>
