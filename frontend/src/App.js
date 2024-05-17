@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Branches from "./components/Branches";
 import StudentList from "./components/StudentList";
 import StudentTrack from "./components/StudentTrack";
+import AttendancePage from "./components/AttendancePage";
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,9 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/branches" element={<Branches />} />
+          <Route path="track/branches" element={<Branches isTrack={true} />} />
+          <Route path ="attendance/branches" element={<Branches isTrack={false}/>}/>
+          <Route path='attendance/branches/:branch/:year' element={<AttendancePage/>}></Route>
           <Route path="/student/:branch" element={<StudentList/>}/> 
           <Route path="/track/:roll_no" element={<StudentTrack/>}/>
         </Routes>

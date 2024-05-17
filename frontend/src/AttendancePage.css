@@ -1,0 +1,95 @@
+/* AttendancePage.css */
+
+.attendance-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1,h2{
+    color: white;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+  }
+  
+  input[type="date"],
+  input[type="text"] {
+    width: 8%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .attendance-list {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  td{
+    color: white;
+  }
+  
+  /* subject style */
+  #subject {
+    width: 9%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+  }
+  
+  #subject:hover {
+    border-color: #007bff; /* Border color on hover */
+  }
+  
+  #subject:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #007bff; /* Border color on focus */
+  }
+  
+  /* Style for the options */
+  #subject option {
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+  }
+  
+  #subject option:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+  }
+  

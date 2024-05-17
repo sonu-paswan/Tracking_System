@@ -11,7 +11,7 @@ function Home() {
           <h2>Tracking</h2>
           <p style={{ color: "black" }}>Track each and every student</p>
           <Link
-            to="/branches"
+            to="track/branches"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <button>Explore</button>
@@ -20,8 +20,12 @@ function Home() {
         <div className="option teacher">
           <h2>Attendance</h2>
           <p style={{ color: "black" }}>Attendance details of every student</p>
-          <button>Discover</button>
-        </div>
+          <Link
+            to="attendance/branches"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <button>check</button>
+          </Link>        </div>
       </div>
     </div>
   );

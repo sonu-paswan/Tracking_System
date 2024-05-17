@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 function Header() {
   return (
     <header className="App-header">
-      <div className="logo">
+      <div className="logo" style={{marginLeft:'1rem'}}>
         {/* <img src={logo} alt="Logo" /> */}
         <h2>Logo</h2>
       </div>
