@@ -1,0 +1,131 @@
+
+
+{
+   "timetable": {
+"Monday": {
+           "09-10": {
+               "1": { "subject": "IOT" },
+               "2": { "subject": "AI" },
+               "3": { "subject": "Cryptography" },
+               "4": { "subject": "ML" }
+           },
+           "10-11": {
+               "3": { "subject": "AI" },
+               "4": { "subject": "ML" }
+           },
+           "11-12": {
+               "1": { "subject": "Data Structure and Algorithm" },
+               "2": { "subject": "Operating System" }
+           },
+           "12-01": {
+               "3": { "subject": "Computer Networking" },
+               "4": { "subject": "Database Management System" }
+           }
+       },
+       "Tuesday": {
+           "09-10": {
+               "1": { "subject": "Database Management System" },
+               "2": { "subject": "IOT" },
+               "3": { "subject": "Cryptography" },
+               "4": { "subject": "AI" }
+           },
+           "10-11": {
+               "1": { "subject": "ML" },
+               "2": { "subject": "Operating System" },
+               "3": { "subject": "Computer Networking" },
+               "4": { "subject": "Data Structure and Algorithm" }
+           },
+           "11-12": {
+               "1": { "subject": "AI" },
+               "2": { "subject": "ML" },
+               "3": { "subject": "IOT" },
+               "4": { "subject": "Database Management System" }
+           },
+           "12-01": {
+               "1": { "subject": "Cryptography" },
+               "2": { "subject": "Operating System" },
+               "3": { "subject": "Data Structure and Algorithm" },
+               "4": { "subject": "Computer Networking" }
+           }
+       },
+       "Wednesday": {
+           "09-10": {
+               "1": { "subject": "Operating System" },
+               "2": { "subject": "Cryptography" },
+               "3": { "subject": "ML" },
+               "4": { "subject": "Database Management System" }
+           },
+           "10-11": {
+               "1": { "subject": "AI" },
+               "2": { "subject": "Data Structure and Algorithm" },
+               "3": { "subject": "Computer Networking" },
+               "4": { "subject": "IOT" }
+           },
+           "11-12": {
+               "1": { "subject": "Database Management System" },
+               "2": { "subject": "Cryptography" },
+               "3": { "subject": "Operating System" },
+               "4": { "subject": "ML" }
+           },
+           "12-01": {
+               "1": { "subject": "IOT" },
+               "2": { "subject": "AI" },
+               "3": { "subject": "Data Structure and Algorithm" },
+               "4": { "subject": "Computer Networking" }
+           }
+       },
+       "Thursday": {
+           "09-10": {
+               "1": { "subject": "Data Structure and Algorithm" },
+               "2": { "subject": "AI" },
+               "3": { "subject": "IOT" },
+               "4": { "subject": "Operating System" }
+           },
+           "10-11": {
+               "1": { "subject": "ML" },
+               "2": { "subject": "Database Management System" },
+               "3": { "subject": "Computer Networking" },
+               "4": { "subject": "Cryptography" }
+           },
+           "11-12": {
+               "1": { "subject": "Operating System" },
+               "2": { "subject": "IOT" },
+               "3": { "subject": "AI" },
+               "4": { "subject": "ML" }
+           },
+           "12-01": {
+               "1": { "subject": "Database Management System" },
+               "2": { "subject": "Cryptography" },
+               "3": { "subject": "Data Structure and Algorithm" },
+               "4": { "subject": "Computer Networking" }
+           }
+       },
+       "Friday": {
+           "09-10": {
+               "1": { "subject": "AI" },
+               "2": { "subject": "Data Structure and Algorithm" },
+               "3": { "subject": "Cryptography" },
+               "4": { "subject": "Operating System" }
+           },
+           "10-11": {
+               "1": { "subject": "AI" },
+               "3": { "subject": "Computer Networking" },
+               "2": { "subject": "Data Structure and Algorithm" },
+               "4": { "subject": "IOT" }
+           },
+           "11-12": {
+               "1": { "subject": "Database Management System" },
+               "2": { "subject": "Cryptography" },
+               "3": { "subject": "ML" },
+               "4": { "subject": "Operating System" }
+           },
+           "12-01": {
+               "1": { "subject": "Data Structure and Algorithm" },
+               "3": { "subject": "IOT" },
+               "4": { "subject": "Computer Networking" },
+               "2": { "subject": "AI" }
+           }
+       } 
+   }  
+}
+
