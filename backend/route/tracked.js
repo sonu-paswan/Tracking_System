@@ -25,12 +25,12 @@ router.get('/', async (req, res) => {
     }
   });
 
-  router.get("/:roll_no",async(req,res)=>{
-    const roll_no = req.params.roll_no;
+  router.get("/:rfid_id",async(req,res)=>{
+    const uid = req.params.rfid_id;
   
     try {
       // Create a query to fetch documents from "users" collection where branch and year match the requested values
-      const q = query(collection(db, 'tracked'), where('Roll_no', '==', roll_no));
+      const q = query(collection(db, 'live_data'), where('rfid_id', '==', uid));
       const querySnapshot = await getDocs(q);
   
       const students = [];
